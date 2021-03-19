@@ -1,0 +1,35 @@
+{
+    "name": "hypatia/fraction",
+    "type": "library",
+    "license": "MIT",
+    "description": "Rational numbers implementation of Hypatia project.",
+    "keywords": [
+        "math",
+        "number",
+        "fraction",
+        "rational",
+        "functional programming"
+    ],
+    "authors": [
+        {"name": "Michel Petit", "email": "contact@cogito-ergo-dev.fr"}
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "grrr-amsterdam/garp-functional": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypatia\\Number\\": "src/"
+        },
+        "files": [
+            "src/Fraction/Functions.php",
+            "src/Fraction/Unary/Functions.php",
+            "src/Fraction/Binary/Functions.php",
+            "src/Fraction/Comparison/Functions.php"
+        ]
+
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.0"
+    }
+}
